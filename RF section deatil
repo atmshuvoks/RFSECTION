@@ -1,0 +1,106 @@
+1. Transceiver Section Signal Lines
+TX Lines (Transmit Path):
+
+TX_PA_OUT_B1
+TX_PA_OUT_B2
+TX_PA_OUT_B3
+TX_PA_OUT_B5
+TX_PA_OUT_B8
+TX_PA_OUT_B20
+TX_PA_OUT_GSMHB
+TX_PA_OUT_GSMLB
+TX_TR_OUT_B1_2_3_4
+TX_TR_OUT_B5_8_17_20_28
+TX_TR_OUT_GSMHB
+TX_TR_OUT_GSMLB
+TX_B7
+TX_B40
+TX_TR_OUT_B7_38_40_41
+RX Lines (Receive Path):
+
+PRX_TR_IN_B1
+PRX_TR_IN_B2_PCS
+PRX_TR_IN_B3_DCS
+PRX_TR_IN_B4_B66
+PRX_TR_IN_B5_GSM850
+PRX_TR_IN_B8_EGSM
+PRX_TR_IN_B17
+PRX_TR_IN_B20
+PRX_TR_IN_B28
+PRX_TR_IN_B7
+PRX_TR_IN_B38_B41
+PRX_TR_IN_B40
+2. Filter and Duplexer Section
+Filters:
+
+SAFFB2G35AA0F3K (Filter for B2 and B66 bands)
+SAFEA2G35MB0F3K (Filter for specific bands)
+SAWFD1G96ACF3K (For RX bands)
+SFHG93AQ902 (High-band filters)
+SFH780AQ102 (Filters for DRX B28)
+SAFFB1G56KE0F3K (GPS Band filter)
+SAFFB2G45MA0F3K (BT/WiFi filter)
+Duplexers:
+
+DPX_LMDP2MGA-J81 (For RX and TX isolation in high bands)
+DPX_B8682 (Band-specific duplexer)
+3. FEMID (RF Front-End Module)
+Antenna Signal Paths:
+
+Main Antenna:
+MAIN_ANT
+MAIN_ANT_2
+Sub Antenna:
+SUB_ANT
+Auxiliary and Control Signals:
+
+AUX_RX
+AUX_TX
+RF_CLK (Clock signal for synchronization)
+ANT_S/W (Antenna Switch Control)
+4. Antenna Switch Section
+Switching Signals:
+MXD8642 (RF switch)
+MXD8631 (SPDT switch for antenna paths)
+5. DRX (Diversity RX) Path
+Diversity Antenna RX Signals:
+DRX_TR_IN_B7_38_40_41
+DRX_TR_IN_B2_B3_B66
+DRX_TR_IN_B5_8_13_17_20_28
+DRX_TR_IN_B1_B4
+6. GPS and WiFi Section
+GPS Lines:
+
+GPS_RF_IN
+GPS_ANT
+WiFi/Bluetooth/FM:
+
+BT/WIFI_ANT
+BT/WIFI/FM_RX
+7. Internal Communication and Power Lines
+Internal Signal Paths:
+
+RFFE_CLK/DATA (Control lines for RF front-end components)
+PRX_I/Q
+TX_I/Q
+GPS_I/Q
+Power and Control Signals:
+
+VBAT
+VBUS_5V
+GND_SENSE
+IF_PMIC_INT (Interface for power management IC)
+8. Clock and Sync Signals
+Common Clock Lines:
+RF_CLK (Clock line for transceiver and FEMID timing)
+19.2MHz_OSC (System reference clock)
+9. Auxiliary Lines
+Control Signals:
+AUX_TX/RX
+ANT_S/W (Antenna Switching Control)
+TR_GPDATA (General-purpose data line for the transceiver)
+10. SIM and SD Interface
+SIM Signal Lines:
+SIM1_DATA/RST/CLK
+SIM2_DATA/RST/CLK
+TRAY_DET (SIM Tray detection)
